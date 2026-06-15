@@ -254,7 +254,9 @@ function initializeImmersiveMap() {
     .setPopup(popup)
     .addTo(map);
 
-  markerElement.addEventListener("click", () => setImmersiveTopic("place"));
+  markerElement.addEventListener("click", () => {
+    window.location.href = "https://cooby19.github.io/flower_VR/";
+  });
 
   map.on("load", () => {
     map.once("idle", () => {
